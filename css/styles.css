@@ -1,0 +1,339 @@
+/*FUENTE*/
+@import url('https://fonts.googleapis.com/css2? family= Buenard & display=swap');
+/*font-family: 'Buenard', serif;*/
+
+/* #FACBEA = rosa 
+   #B0578D = violeta
+   #FFE4D6 = cremita 
+   #D988B9 = rosa fuerte */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*LETRA DEL PROYECTO*/
+html {
+    font-size: 62.5%;
+}
+
+/*TIPO DE LETRA Y TAMAÑO*/
+body {
+    font-family: 'Buenard', serif;
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+/*NOMBRE DE LA PAGINA*/
+.titulo-principal {
+    color: #FACBEA;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+    font-size: 150%;
+    padding: 2px;
+}
+
+/*ESTILOS DEL ENCABEZADO*/
+header a {
+    text-decoration: none;
+
+}
+
+/*MENU DE NAVEGACION*/
+header {
+    background-color: #B0578D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    background-color: #B0578D;
+}
+
+.bg-body-tertiary {
+    opacity: none;
+    --bs-bg-opacity: none;
+}
+
+.navbar {
+    padding: 1%;
+}
+
+/*PAGINAS*/
+.nav-link {
+    color: #FFE4D6;
+    background-color: #B0578D;
+}
+
+/*FONDO DEL MENU*/
+.container-fluid {
+    background-color: #B0578D;
+}
+
+/*BOTON MENU*/
+button.navbar-toggler {
+    border: none;
+}
+
+/*FOTO PRINCIPAL*/
+.banner-inicio {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 2%;
+}
+
+/*GRILLA DE LA PAG PRINCIPAL*/
+
+.grilla-principal {
+    display: grid;
+    grid-template-areas:
+        "video  texto1"
+        "texto2 foto1"
+        "foto2  texto3";
+    grid-template-rows: repeat(350px);
+    grid-template-columns: 50% 50%;
+
+}
+
+/*TEXTOS INTRODUCCION*/
+main p {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    font-size: 20px;
+
+}
+
+/*TEXTO Y FOTO DE LAS CAPAS DE LA PIEL*/
+.que-es-la-piel {
+    font-weight: 700;
+    text-align: center;
+    color: #B0578D;
+
+}
+
+.foto-capas-piel {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 70%;
+    margin: 0 15%
+}
+
+/*TEXTO Y FOTO DE LAS FUNCIONES DE LA PIEL*/
+.funciones-de-la-piel {
+    font-weight: 700;
+    align-items: center;
+    color: #B0578D;
+    margin: 5%;
+}
+
+.foto-funciones-piel {
+    height: 90%;
+    width: 90%;
+}
+
+/*ICONOS REDES*/
+.icono-fb {
+    width: 100%;
+}
+
+.icono-wp {
+    width: 100%;
+}
+
+.icono-mail {
+    width: 100%;
+}
+
+.redes {
+    width: 20%;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+/*BOTON SUSCRIPCION*/
+footer p {
+    text-align: center;
+
+}
+
+footer form {
+    text-align: right;
+    color: greys;
+    margin: 5%;
+}
+
+/*VIDEO MARY KAY*/
+.video-inicio {
+    width: 100%;
+    justify-content: center;
+    padding: 40px;
+    height: 100%;
+}
+
+/*GUIA PIELES*/
+.reconocer-tu-piel h2 {
+    text-align: center;
+    color: #D988B9;
+    font-size: 3rem;
+    font-weight: 900;
+    text-decoration: underline;
+    margin: 2%;
+}
+
+.reconocer-tu-piel p {
+    text-align: center;
+    font: 3rem;
+    padding: 2%;
+}
+
+main ul {
+    padding: 3%;
+}
+
+/*PALABRA RESALTADA PIELES*/
+.pieles {
+    color: #D988B9;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/*PRESENTACION DADATINA*/
+div h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.video-dadatina {
+    margin: auto;
+    padding-top: 2%;
+    display: flex;
+}
+
+@media (max-width: 576px) {
+    .grilla-principal {
+        display: grid;
+        grid-template-areas:
+            "video"
+            "texto1"
+            "foto2"
+            "texto2"
+            "foto1"
+            "texto3";
+        grid-template-rows: repeat(350px);
+        grid-template-columns: 100%;
+
+    }
+
+    .foto-funciones-piel {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+
+    .video-inicio {
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contacto{
+        display: grid;
+        grid-template-areas: 
+        "iconos"
+        "suscripcion";
+        grid-template-rows: 150px;
+        grid-template-columns: 100%;
+    }
+
+    .redes{
+        width: 50%;
+        margin: auto;
+        padding: auto;
+
+    }
+       
+
+    footer form {
+        text-align: center;
+        color: greys;
+        margin: 5%;
+    }
+
+    .foto-capas-piel {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 70%;
+        margin: 0 15%
+    }
+
+    .titulo-principal {
+        color: #FACBEA;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+        font-size: 145%;
+        margin: auto;
+    }
+
+    .navbar img{
+        padding: 2%;
+    }   
+
+    ul {
+        margin: 5px;
+    }
+
+    .video-dadatina {
+        margin: auto;
+        padding-top: 2%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (min-width: 800px) {
+    .titulo-principal {
+        color: #FACBEA;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+        font-size: 200%;
+        margin: auto;
+    }
+
+    .grilla-principal {
+        display: grid;
+        grid-template-areas:
+            "video video"
+            "texto1 texto1"            
+            "texto2 texto3"
+            "foto1  foto1"
+            "foto2  foto2";
+        grid-template-rows: repeat(350px);
+        grid-template-columns: 50% 50%
+
+    }
+
+}
