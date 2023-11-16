@@ -337,3 +337,15 @@ div h3 {
     }
 
 }
+
+.grilla_pasos{
+    display: grid;
+    grid-template-areas: 
+    "paso1 paso2 paso3" 
+    "paso4       paso5"
+    "paso6       paso7" 
+    "paso8 paso9 paso10";
+    grid-template-rows: 300px 500px 400px 300px;
+    grid-template-columns: 33% 33% 33%; 
+   
+}
