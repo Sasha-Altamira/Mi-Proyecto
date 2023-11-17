@@ -181,7 +181,7 @@ footer form {
     margin: 5%;
 }
 
-/*VIDEO MARY KAY*/
+/*VIDEO DE INICIO*/
 .video-inicio {
     width: 100%;
     justify-content: center;
@@ -256,22 +256,22 @@ div h3 {
         height: 100%;
     }
 
-    .contacto{
+    .contacto {
         display: grid;
-        grid-template-areas: 
-        "iconos"
-        "suscripcion";
+        grid-template-areas:
+            "iconos"
+            "suscripcion";
         grid-template-rows: 150px;
         grid-template-columns: 100%;
     }
 
-    .redes{
+    .redes {
         width: 50%;
         margin: auto;
         padding: auto;
 
     }
-       
+
 
     footer form {
         text-align: center;
@@ -296,9 +296,9 @@ div h3 {
         margin: auto;
     }
 
-    .navbar img{
+    .navbar img {
         padding: 2%;
-    }   
+    }
 
     ul {
         margin: 5px;
@@ -327,25 +327,166 @@ div h3 {
         display: grid;
         grid-template-areas:
             "video video"
-            "texto1 texto1"            
+            "texto1 texto1"
             "texto2 texto3"
             "foto1  foto1"
             "foto2  foto2";
         grid-template-rows: repeat(350px);
         grid-template-columns: 50% 50%
-
     }
 
 }
 
-.grilla_pasos{
+/*TITULO PRINCIPAL DE LA PAGINA CUIDADOS DE LA PIEL*/
+main h2{text-align: center;
+    color: #D988B9;
+    font-size: 3rem;
+    font-weight: 900;
+    text-decoration: underline;
+    margin: 2%;
+}
+
+main h3{text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 2%;
+
+}
+
+/*PARRO PRINCIPAL DE MAIN*/
+main p{
+    font-size: 2rem;   
+
+}
+
+/*GRILLA DE PASOS PARA CUIDAR LA PIEL*/
+.grilla_pasos div {
+    width: 100%;
+    height: 100%;
+
+}
+
+.grilla_pasos {
     display: grid;
-    grid-template-areas: 
-    "paso1 paso2 paso3" 
-    "paso4       paso5"
-    "paso6       paso7" 
-    "paso8 paso9 paso10";
-    grid-template-rows: 300px 500px 400px 300px;
-    grid-template-columns: 33% 33% 33%; 
-   
+    grid-template-areas:
+        "paso1 paso2 paso3"
+        "paso4 img1  paso5"
+        "paso6 paso6 paso7"
+        "paso8 paso9 paso10";
+    grid-template-rows:
+    300px 300px 350px 300px;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    background-color:#FACBEA  ;
+
+}
+
+/*AREAS DEFINIDAS DE LA GRILLA*/ 
+.paso_1 {
+    grid-area: paso1;
+    padding: 5%;
+
+}
+
+.paso_2 {
+    grid-area: paso2;
+    padding: 5%;
+}
+
+.paso_3 {
+    grid-area: paso3;
+    padding: 5%;
+}
+
+.paso_4 {
+    grid-area: paso4;
+    padding: 5%;
+}
+
+.img_1 {
+    grid-area: img1;
+    width: 100%;
+}
+
+.paso_5 {
+    grid-area: paso5;
+    padding: 5%;
+
+}
+
+.paso_6 {
+    grid-area: paso6;
+    padding-top: 5%;
+}
+
+.paso_7 {
+    grid-area: paso7;
+    padding: 5%;
+    margin-bottom: 10%;
+    padding-top: 0;
+}
+
+.paso_8 {
+    grid-area: paso8;
+    padding: 5%;
+
+}
+
+.paso_9 {
+    grid-area: paso9;
+    padding: 5%;
+
+}
+
+.paso_10 {
+    grid-area: paso10;
+    padding: 5%;
+
+}
+
+/*PARRAFOS DENTRO DE LA GRILLA*/
+.grilla_pasos div p{
+    display: flex;
+    padding: 5px;
+    font-size: 20px;
+    justify-content: center;
+    width: 100%;
+    font-weight: 500;
+    
+}
+
+/*TITULOS DENTRO DE LA GRILLA*/
+.grilla_pasos div h4{
+    text-align: center;
+    color: #B0578D;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: underline;
+    margin: 2%;
+}
+
+@media (max-width: 576px) {
+    .grilla_pasos {
+        display: grid;
+        grid-template-areas:
+        "paso1" 
+        "paso2" 
+        "paso3"
+        "paso4" 
+        "img1"  
+        "paso5"
+        "paso6" 
+        "paso7" 
+        "paso8" 
+        "paso9" 
+        "paso10";
+        grid-template-rows: 1fr;
+        grid-template-columns: 100%;
+
+    }
+
+    .paso_7{
+        padding: 5%;
+        margin: 0;
+    }
 }
