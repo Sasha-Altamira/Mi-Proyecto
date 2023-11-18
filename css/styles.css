@@ -338,7 +338,8 @@ div h3 {
 }
 
 /*TITULO PRINCIPAL DE LA PAGINA CUIDADOS DE LA PIEL*/
-main h2{text-align: center;
+main h2 {
+    text-align: center;
     color: #D988B9;
     font-size: 3rem;
     font-weight: 900;
@@ -346,7 +347,8 @@ main h2{text-align: center;
     margin: 2%;
 }
 
-main h3{text-align: center;
+main h3 .influencer {
+    text-align: center;
     font-size: 3rem;
     font-weight: 900;
     margin: 2%;
@@ -354,8 +356,8 @@ main h3{text-align: center;
 }
 
 /*PARRO PRINCIPAL DE MAIN*/
-main p{
-    font-size: 2rem;   
+main p .influencer {
+    font-size: 2rem;
 
 }
 
@@ -374,14 +376,14 @@ main p{
         "paso6 paso6 paso7"
         "paso8 paso9 paso10";
     grid-template-rows:
-    300px 300px 350px 300px;
+        300px 300px 350px 300px;
     grid-template-columns: 33% 33% 33%;
     justify-content: center;
-    background-color:#FACBEA  ;
+    background-color: #FACBEA;
 
 }
 
-/*AREAS DEFINIDAS DE LA GRILLA*/ 
+/*AREAS DEFINIDAS DE LA GRILLA*/
 .paso_1 {
     grid-area: paso1;
     padding: 5%;
@@ -445,18 +447,18 @@ main p{
 }
 
 /*PARRAFOS DENTRO DE LA GRILLA*/
-.grilla_pasos div p{
+.grilla_pasos div p {
     display: flex;
     padding: 5px;
     font-size: 20px;
     justify-content: center;
     width: 100%;
     font-weight: 500;
-    
+
 }
 
 /*TITULOS DENTRO DE LA GRILLA*/
-.grilla_pasos div h4{
+.grilla_pasos div h4 {
     text-align: center;
     color: #B0578D;
     font-size: 2rem;
@@ -469,23 +471,23 @@ main p{
     .grilla_pasos {
         display: grid;
         grid-template-areas:
-        "paso1" 
-        "paso2" 
-        "paso3"
-        "paso4" 
-        "img1"  
-        "paso5"
-        "paso6" 
-        "paso7" 
-        "paso8" 
-        "paso9" 
-        "paso10";
+            "paso1"
+            "paso2"
+            "paso3"
+            "paso4"
+            "img1"
+            "paso5"
+            "paso6"
+            "paso7"
+            "paso8"
+            "paso9"
+            "paso10";
         grid-template-rows: 1fr;
         grid-template-columns: 100%;
 
     }
 
-    .paso_7{
+    .paso_7 {
         padding: 5%;
         margin: 0;
     }

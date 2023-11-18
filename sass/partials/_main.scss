@@ -22,6 +22,10 @@ main {
 
         div {
             h3 {
+                font-size: 2rem;
+                text-align: center;
+                font-weight: 700;
+            
                 .que-es-la-piel {
                     font-weight: 700;
                     text-align: center;
@@ -35,6 +39,14 @@ main {
                     color: #B0578D;
                     margin: 5%;
                 }
+            }
+            iframe{
+                .video-dadatina {
+                    margin: auto;
+                    padding-top: 2%;
+                    display: flex;
+                }
+                
             }
         }
 
@@ -62,6 +74,10 @@ main {
         padding: 50px;
         font-size: 20px;
 
+        .influencer {
+            font-size: 2rem;        
+        }
+
     }
     .video-inicio {
         width: 100%;
@@ -82,10 +98,117 @@ main {
             text-align: center;
             font: 3rem;
             padding: 2%;
-        }
+            }
     }
     ul {
         padding: 3%;
+        li{
+            span{
+                .pieles {
+                    color: #D988B9;
+                    font-size: 2rem;
+                    font-weight: 800;
+                }
+            }
+        }
+           
+    }
+
+    .grilla_pasos {
+        display: grid;
+        grid-template-areas:
+            "paso1 paso2 paso3"
+            "paso4 img1  paso5"
+            "paso6 paso6 paso7"
+            "paso8 paso9 paso10";
+        grid-template-rows:
+            300px 300px 350px 300px;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: center;
+        background-color: #FACBEA;
+        .div {
+            width: 100%;
+            height: 100%;
+            .paso_1 {
+                grid-area: paso1;
+                padding: 5%;
+            
+            }
+            .paso_2 {
+                grid-area: paso2;
+                padding: 5%;
+            }
+            
+            .paso_3 {
+                grid-area: paso3;
+                padding: 5%;
+            }
+            
+            .paso_4 {
+                grid-area: paso4;
+                padding: 5%;
+            }
+            
+            .img_1 {
+                grid-area: img1;
+                width: 100%;
+            }
+            
+            .paso_5 {
+                grid-area: paso5;
+                padding: 5%;
+            
+            }
+            
+            .paso_6 {
+                grid-area: paso6;
+                padding-top: 5%;
+            }
+            
+            .paso_7 {
+                grid-area: paso7;
+                padding: 5%;
+                margin-bottom: 10%;
+                padding-top: 0;
+            }
+            
+            .paso_8 {
+                grid-area: paso8;
+                padding: 5%;
+            
+            }
+            
+            .paso_9 {
+                grid-area: paso9;
+                padding: 5%;
+            
+            }
+            
+            .paso_10 {
+                grid-area: paso10;
+                padding: 5%;
+            
+            }
+            p {
+                display: flex;
+                padding: 5px;
+                font-size: 20px;
+                justify-content: center;
+                width: 100%;
+                font-weight: 500;
+            
+            }
+            h4 {
+                text-align: center;
+                color: #B0578D;
+                font-size: 2rem;
+                font-weight: 900;
+                text-decoration: underline;
+                margin: 2%;
+            }
+        
+        }
+    
     }
 }
 
