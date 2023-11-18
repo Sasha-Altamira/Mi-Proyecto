@@ -1,0 +1,50 @@
+/*ESTILOS DEL HEADER*/
+header {
+    background-color: #B0578D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .navbar-brand {
+        background-color: #B0578D;
+    }
+
+    .bg-body-tertiary {
+        opacity: none;
+        --bs-bg-opacity: none;
+    }
+
+    .navbar {
+        padding: 1%;
+    }
+
+    nav {
+        div {
+            div {
+                div {
+                    .nav-link {
+                        color: #FFE4D6;
+                        background-color: #B0578D;
+                    }
+                }
+
+            }
+
+            .container-fluid {
+                background-color: #B0578D;
+            }
+
+            button {
+                .navbar-toggler {
+                    border: none;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+

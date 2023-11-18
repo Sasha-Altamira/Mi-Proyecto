@@ -1,0 +1,54 @@
+/*ESTILOS DEL FOOTER*/
+
+footer {
+    section {
+        section {
+            div {
+                div {
+                    img {
+                        .icono-fb {
+                            width: 100%;
+                        }
+
+                        .icono-wp {
+                            width: 100%;
+                        }
+
+                        .icono-mail {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .redes {
+                width: 20%;
+                height: 100px;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                display: flex;
+                align-items: space-evenly;
+                justify-content: space-evenly;
+            }
+
+            .contacto {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+            }
+        }
+
+        form {
+            text-align: right;
+            color: greys;
+            margin: 5%;
+        }
+    }
+
+    p {
+        text-align: center;
+
+    }
+}
