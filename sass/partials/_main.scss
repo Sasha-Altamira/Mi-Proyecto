@@ -1,117 +1,18 @@
 /*CUERPO DEL INDEX*/
 main {
-    section {
-        img {
-            .banner-inicio {
-                width: 100%;
-                background-position: center;
-                background-size: cover;
-                padding: 2%;
-            }
+    ul {
+        padding: 3%;
 
-            .grilla-principal {
-                display: grid;
-                grid-template-areas:
-                    "video  texto1"
-                    "texto2 foto1"
-                    "foto2  texto3";
-                grid-template-rows: repeat(350px);
-                grid-template-columns: 50% 50%;
-            }
-        }
-
-        div {
-            h3 {
-                font-size: 2rem;
-                text-align: center;
-                font-weight: 700;
-            
-                .que-es-la-piel {
-                    font-weight: 700;
-                    text-align: center;
-                    color: #B0578D;
-
-                }
-
-                .funciones-de-la-piel {
-                    font-weight: 700;
-                    align-items: center;
-                    color: #B0578D;
-                    margin: 5%;
-                }
-            }
-            iframe{
-                .video-dadatina {
-                    margin: auto;
-                    padding-top: 2%;
-                    display: flex;
-                }
-                
-            }
-        }
-
-        img {
-            .foto-capas-piel {
-                display: flex;
-                flex-direction: row;
-                width: 70%;
-                height: 70%;
-                margin: 0 15%
-            }
-
-            .foto-funciones-piel {
-                height: 90%;
-                width: 90%;
-            }
-        }
-
+    }
+    div{
+        text-align: center;
     }
 
     p {
         text-align: center;
         width: 100%;
-        height: 100%;
         padding: 50px;
         font-size: 20px;
-
-        .influencer {
-            font-size: 2rem;        
-        }
-
-    }
-    .video-inicio {
-        width: 100%;
-        justify-content: center;
-        padding: 40px;
-        height: 100%;
-    }
-    .reconocer-tu-piel {
-        h2 {
-            text-align: center;
-            color: #D988B9;
-            font-size: 3rem;
-            font-weight: 900;
-            text-decoration: underline;
-            margin: 2%;
-        }
-        p {
-            text-align: center;
-            font: 3rem;
-            padding: 2%;
-            }
-    }
-    ul {
-        padding: 3%;
-        li{
-            span{
-                .pieles {
-                    color: #D988B9;
-                    font-size: 2rem;
-                    font-weight: 800;
-                }
-            }
-        }
-           
     }
 
     .grilla_pasos {
@@ -126,89 +27,296 @@ main {
         grid-template-columns: 33% 33% 33%;
         justify-content: center;
         background-color: #FACBEA;
-        .div {
+
+        div {
             width: 100%;
             height: 100%;
-            .paso_1 {
-                grid-area: paso1;
-                padding: 5%;
-            
+
+            h3 {
+                margin: 5%;
             }
-            .paso_2 {
-                grid-area: paso2;
-                padding: 5%;
-            }
-            
-            .paso_3 {
-                grid-area: paso3;
-                padding: 5%;
-            }
-            
-            .paso_4 {
-                grid-area: paso4;
-                padding: 5%;
-            }
-            
-            .img_1 {
-                grid-area: img1;
-                width: 100%;
-            }
-            
-            .paso_5 {
-                grid-area: paso5;
-                padding: 5%;
-            
-            }
-            
-            .paso_6 {
-                grid-area: paso6;
-                padding-top: 5%;
-            }
-            
-            .paso_7 {
-                grid-area: paso7;
-                padding: 5%;
-                margin-bottom: 10%;
-                padding-top: 0;
-            }
-            
-            .paso_8 {
-                grid-area: paso8;
-                padding: 5%;
-            
-            }
-            
-            .paso_9 {
-                grid-area: paso9;
-                padding: 5%;
-            
-            }
-            
-            .paso_10 {
-                grid-area: paso10;
-                padding: 5%;
-            
-            }
+
             p {
-                display: flex;
-                padding: 5px;
-                font-size: 20px;
-                justify-content: center;
-                width: 100%;
-                font-weight: 500;
-            
+                padding: 0;
             }
-            h4 {
-                text-align: center;
-                color: #B0578D;
-                font-size: 2rem;
-                font-weight: 900;
-                text-decoration: underline;
-                margin: 2%;
-            }
-        
+
         }
-    
+
+        p {
+            display: flex;
+            padding: 5px;
+            font-size: 20px;
+            justify-content: center;
+            width: 100%;
+            font-weight: 500;
+        }
     }
+
 }
 
+h4 {
+    text-align: center;
+color: #B0578D;
+font-size: 2rem;
+font-weight: 900;
+text-decoration: underline;
+margin: 2%;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    color: #D988B9;
+    font-size: 3rem;
+    font-weight: 900;
+    text-decoration: underline;
+    margin: 2%;
+}
+
+p {
+    text-align: center;
+    font: 3rem;
+    padding: 2%;
+}
+
+/*ESTILOS DEL INDEX*/
+
+.video-inicio {
+    grid-area: video;
+    width: 100%;
+    justify-content: center;
+    padding: 40px;
+    height: 100%;
+}
+
+.banner-inicio {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 2%;
+}
+
+.grilla-principal {
+    display: grid;
+    grid-template-areas:
+        "video  texto1"
+        "texto2 foto1"
+        "foto2  texto3";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;
+}
+
+.img_1 {
+    grid-area: img1;
+    width: 100%;
+}
+
+/*GRILLA DE LA PAG PRINCIPAL*/
+
+.que-es-la-piel {
+    font-weight: 700;
+    text-align: center;
+    color: #B0578D;
+
+}
+
+.funciones-de-la-piel {
+    font-weight: 700;
+    align-items: center;
+    color: #B0578D;
+    margin: 5%;
+}
+
+
+.texto_2 {
+    grid-area: texto2;
+}
+
+.texto_3 {
+    grid-area: texto3;
+}
+
+.foto-capas-piel {
+    grid-area: foto1;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 70%;
+    margin: 0 15%
+}
+
+.foto-funciones-piel {
+    grid-area: foto2;
+    height: 90%;
+    width: 90%;
+}
+
+.parrafo-inicio {
+    grid-area: texto1;
+}
+
+/*DADATINA*/
+
+.influencer {
+    font-size: 2rem;
+}
+
+
+/*ESTILOS DE LA PAGINA TIPOS DE PIEL*/
+
+.piel {
+    color: #D988B9;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+
+/*GRILLA DE CUIDADO DE LA PIEL*/
+.paso_1 {
+    grid-area: paso1;
+    padding: 5%;
+
+}
+
+.paso_2 {
+    grid-area: paso2;
+    padding: 5%;
+}
+
+.paso_3 {
+    grid-area: paso3;
+    padding: 5%;
+}
+
+.paso_4 {
+    grid-area: paso4;
+    padding: 5%;
+}
+
+.img_1 {
+    grid-area: img1;
+    width: 100%;
+}
+
+.paso_5 {
+    grid-area: paso5;
+    padding: 5%;
+
+}
+
+.paso_6 {
+    grid-area: paso6;
+    padding-top: 5%;
+}
+
+.paso_7 {
+    grid-area: paso7;
+    padding: 5%;
+    margin-bottom: 10%;
+    padding-top: 0;
+}
+
+.paso_8 {
+    grid-area: paso8;
+    padding: 5%;
+
+}
+
+.paso_9 {
+    grid-area: paso9;
+    padding: 5%;
+
+}
+
+.paso_10 {
+    grid-area: paso10;
+    padding: 5%;
+
+}
+
+
+/*PAGINA RUTINA*/
+
+.inicio_rutina {
+    display: grid;
+    grid-template-areas:
+        "txt1 fto1";
+    grid-template-rows: 1fr;
+    grid-template-columns: 50% 50%;
+}
+
+.textoI {
+    grid-area: txt1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.sonrisa {
+    grid-area: fto1;
+    width: 100%;
+    padding: 2px;
+}
+
+/*RUTINA DE LIMPIEZA*/
+
+.grilla_5_pasos {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "pasoI   pasoII"
+        "pasoIII pasoIV"
+        "pasoV   pasoV";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(500px);
+    margin: auto;
+}
+
+/*AREAS DE LA GRILLA, RUTINAS*/
+.paso_I {
+    grid-area: pasoI;
+}
+
+.paso_II {
+    grid-area: pasoII;
+}
+
+.paso_III {
+    grid-area: pasoIII;
+}
+
+.paso_IV {
+    grid-area: pasoIV;
+}
+
+.paso_V {
+    grid-area: pasoV;
+    text-align: center;
+}
+/*keyframes*/
+.animacion {
+    color: #FACBEA;
+    animation-name: efecto_colorido;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: 3s;
+}
+
+@keyframes efecto_colorido{
+    0%{
+        color: #FACBEA;
+        transform: scale(2,2);
+    }
+    50%{
+        color:#D988B9;
+        
+    }
+    100%{
+        color: #B0578D;
+    }
+}

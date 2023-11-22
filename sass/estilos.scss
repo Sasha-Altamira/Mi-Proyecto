@@ -1,3 +1,38 @@
-@import "./partials/footer";
-@import "./partials/header";
-@import "./partials/main";
+@import "partials/header";
+@import "partials/main";
+@import "partials/footer";
+@import "partials/mediaQ";
+
+
+
+/*FUENTE*/
+@import url('https://fonts.googleapis.com/css2? family= Buenard & display=swap');
+
+/*font-family: 'Buenard', serif;*/
+
+/*
+$rosa:#FACBEA;  
+$violeta:#B0578D; 
+$cremita:#FFE4D6;
+$rosa_fuerte:#D988B9;
+
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*LETRA DEL PROYECTO*/
+html {
+    font-size: 62.5%;
+}
+
+/*TIPO DE LETRA Y TAMAÑO*/
+body {
+    font-family: 'Buenard', serif;
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}

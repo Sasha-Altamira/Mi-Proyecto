@@ -1,0 +1,198 @@
+/*PANTALLA CELULAR*/
+@media (max-width: 576px) {
+    .titulo-principal {
+        color: #FACBEA;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+        font-size: 145%;
+        margin: auto;
+    }
+
+    .navbar img {
+        padding: 2%;
+    }
+
+    ul {
+        margin: 5px;
+    }
+    .grilla_pasos {
+        display: grid;
+        grid-template-areas:
+            "paso1"
+            "paso2"
+            "paso3"
+            "paso4"
+            "img1"
+            "paso5"
+            "paso6"
+            "paso7"
+            "paso8"
+            "paso9"
+            "paso10";
+        grid-template-rows: 1fr;
+        grid-template-columns: 100%;        
+        background-color: #FACBEA;
+    }
+
+    .grilla-principal {
+        display: grid;
+        grid-template-areas:
+            "video"
+            "texto1"
+            "foto2"
+            "texto2"
+            "foto1"
+            "texto3";
+        grid-template-rows: 1fr;
+        grid-template-columns: 100%;
+
+    }
+
+    .foto-funciones-piel {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+
+    .video-inicio {
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .contacto {
+        display: grid;
+        grid-template-areas:
+            "iconos"
+            "suscripcion";
+        grid-template-rows: 150px;
+        grid-template-columns: 100%;
+    }
+
+    .redes {
+        width: 50%;
+        margin: auto;
+        padding: auto;
+
+    }
+
+
+    footer form {
+        text-align: center;
+        color: greys;
+        margin: 5%;
+    }
+
+    .foto-capas-piel {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 70%;
+        margin: 0 15%
+    }
+
+    .video-dadatina {
+        margin: auto;
+        padding-top: 2%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+   
+    li{
+        padding: 2px;
+        margin: auto;
+    }
+    footer {
+        section {
+            form {
+                text-align: center;
+                color: greys;
+                margin: 5%;
+            }
+        }
+    }
+    
+.inicio_rutina {
+    display: grid;
+    grid-template-areas:
+        "txt1"
+        "fto1";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+}
+    
+.grilla_5_pasos {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "pasoI"   
+        "pasoII"
+        "pasoIII" 
+        "pasoIV"
+        "pasoV"   
+        "pasoV";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    margin: auto;
+}
+
+    
+}
+
+
+/*PANTALLA COMPUTADORA*/
+
+@media (min-width: 800px) {
+    .titulo-principal {
+        color: #FACBEA;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+        font-size: 200%;
+        margin: auto;
+    }
+
+    .grilla-principal {
+        display: grid;
+        grid-template-areas:
+            "video texto1"
+            "texto2 texto3"
+            "foto1  foto2";
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 50% 50%
+    }
+
+}
+
+
+/*PANTALLA TABLET*/
+
+@media (max-width: 576px) {
+    .grilla_pasos {
+        display: grid;
+        grid-template-areas:
+            "paso1"
+            "paso2"
+            "paso3"
+            "paso4"
+            "img1"
+            "paso5"
+            "paso6"
+            "paso7"
+            "paso8"
+            "paso9"
+            "paso10";
+        grid-template-rows: 1fr;
+        grid-template-columns: 100%;
+
+    }
+
+    .paso_7 {
+        padding: 5%;
+        margin: 0;
+    }
+}

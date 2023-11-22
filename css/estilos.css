@@ -1,80 +1,109 @@
+@charset "UTF-8";
 /*ESTILOS DEL HEADER*/
+@import url("https://fonts.googleapis.com/css2? family= Buenard & display=swap");
 header {
   background-color: #B0578D;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-header .navbar-brand {
+header a {
+  text-decoration: none;
+}
+
+/*MENU DE NAVEGACION*/
+.navbar-brand {
   background-color: #B0578D;
 }
-header .bg-body-tertiary {
+
+.bg-body-tertiary {
   opacity: none;
   --bs-bg-opacity: none;
 }
-header .navbar {
+
+.navbar {
   padding: 1%;
 }
-header nav div div div .nav-link {
+
+.nav-link {
   color: #FFE4D6;
   background-color: #B0578D;
 }
-header nav div .container-fluid {
+
+.container-fluid {
   background-color: #B0578D;
 }
-header nav div button .navbar-toggler {
+
+button .navbar-toggler {
   border: none;
 }
 
-/*CUERPO DEL INDEX*/
-main section img .banner-inicio {
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  padding: 2%;
-}
-main section img .grilla-principal {
-  display: grid;
-  grid-template-areas: "video  texto1" "texto2 foto1" "foto2  texto3";
-  grid-template-rows: repeat(350px);
-  grid-template-columns: 50% 50%;
-}
-main section div h3 .que-es-la-piel {
-  font-weight: 700;
+/*TITULO DE LA WEB*/
+.titulo-principal {
+  color: #FACBEA;
   text-align: center;
-  color: #B0578D;
+  text-decoration: none;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+  font-size: 150%;
+  padding: 2px;
 }
-main section div h3 .funciones-de-la-piel {
-  font-weight: 700;
-  align-items: center;
-  color: #B0578D;
-  margin: 5%;
+
+/*CUERPO DEL INDEX*/
+main ul {
+  padding: 3%;
 }
-main section img .foto-capas-piel {
-  display: flex;
-  flex-direction: row;
-  width: 70%;
-  height: 70%;
-  margin: 0 15%;
-}
-main section img .foto-funciones-piel {
-  height: 90%;
-  width: 90%;
+main div {
+  text-align: center;
 }
 main p {
   text-align: center;
   width: 100%;
-  height: 100%;
   padding: 50px;
   font-size: 20px;
 }
-main .video-inicio {
-  width: 100%;
+main .grilla_pasos {
+  display: grid;
+  grid-template-areas: "paso1 paso2 paso3" "paso4 img1  paso5" "paso6 paso6 paso7" "paso8 paso9 paso10";
+  grid-template-rows: 300px 300px 350px 300px;
+  grid-template-columns: 33% 33% 33%;
   justify-content: center;
-  padding: 40px;
+  background-color: #FACBEA;
+}
+main .grilla_pasos div {
+  width: 100%;
   height: 100%;
 }
-main .reconocer-tu-piel h2 {
+main .grilla_pasos div h3 {
+  margin: 5%;
+}
+main .grilla_pasos div p {
+  padding: 0;
+}
+main .grilla_pasos p {
+  display: flex;
+  padding: 5px;
+  font-size: 20px;
+  justify-content: center;
+  width: 100%;
+  font-weight: 500;
+}
+
+h4 {
+  text-align: center;
+  color: #B0578D;
+  font-size: 2rem;
+  font-weight: 900;
+  text-decoration: underline;
+  margin: 2%;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+h2 {
   text-align: center;
   color: #D988B9;
   font-size: 3rem;
@@ -82,26 +111,250 @@ main .reconocer-tu-piel h2 {
   text-decoration: underline;
   margin: 2%;
 }
-main .reconocer-tu-piel p {
+
+p {
   text-align: center;
   font: 3rem;
   padding: 2%;
 }
-main ul {
-  padding: 3%;
+
+/*ESTILOS DEL INDEX*/
+.video-inicio {
+  grid-area: video;
+  width: 100%;
+  justify-content: center;
+  padding: 40px;
+  height: 100%;
 }
 
-/*ICONOS REDES*/
-footer section section div div img .icono-fb {
+.banner-inicio {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  padding: 2%;
+}
+
+.grilla-principal {
+  display: grid;
+  grid-template-areas: "video  texto1" "texto2 foto1" "foto2  texto3";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 50% 50%;
+}
+
+.img_1 {
+  grid-area: img1;
   width: 100%;
 }
-footer section section div div img .icono-wp {
+
+/*GRILLA DE LA PAG PRINCIPAL*/
+.que-es-la-piel {
+  font-weight: 700;
+  text-align: center;
+  color: #B0578D;
+}
+
+.funciones-de-la-piel {
+  font-weight: 700;
+  align-items: center;
+  color: #B0578D;
+  margin: 5%;
+}
+
+.texto_2 {
+  grid-area: texto2;
+}
+
+.texto_3 {
+  grid-area: texto3;
+}
+
+.foto-capas-piel {
+  grid-area: foto1;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 70%;
+  margin: 0 15%;
+}
+
+.foto-funciones-piel {
+  grid-area: foto2;
+  height: 90%;
+  width: 90%;
+}
+
+.parrafo-inicio {
+  grid-area: texto1;
+}
+
+/*DADATINA*/
+.influencer {
+  font-size: 2rem;
+}
+
+/*ESTILOS DE LA PAGINA TIPOS DE PIEL*/
+.piel {
+  color: #D988B9;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/*GRILLA DE CUIDADO DE LA PIEL*/
+.paso_1 {
+  grid-area: paso1;
+  padding: 5%;
+}
+
+.paso_2 {
+  grid-area: paso2;
+  padding: 5%;
+}
+
+.paso_3 {
+  grid-area: paso3;
+  padding: 5%;
+}
+
+.paso_4 {
+  grid-area: paso4;
+  padding: 5%;
+}
+
+.img_1 {
+  grid-area: img1;
   width: 100%;
 }
-footer section section div div img .icono-mail {
+
+.paso_5 {
+  grid-area: paso5;
+  padding: 5%;
+}
+
+.paso_6 {
+  grid-area: paso6;
+  padding-top: 5%;
+}
+
+.paso_7 {
+  grid-area: paso7;
+  padding: 5%;
+  margin-bottom: 10%;
+  padding-top: 0;
+}
+
+.paso_8 {
+  grid-area: paso8;
+  padding: 5%;
+}
+
+.paso_9 {
+  grid-area: paso9;
+  padding: 5%;
+}
+
+.paso_10 {
+  grid-area: paso10;
+  padding: 5%;
+}
+
+/*PAGINA RUTINA*/
+.inicio_rutina {
+  display: grid;
+  grid-template-areas: "txt1 fto1";
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
+}
+
+.textoI {
+  grid-area: txt1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.sonrisa {
+  grid-area: fto1;
+  width: 100%;
+  padding: 2px;
+}
+
+/*RUTINA DE LIMPIEZA*/
+.grilla_5_pasos {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "pasoI   pasoII" "pasoIII pasoIV" "pasoV   pasoV";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(500px);
+  margin: auto;
+}
+
+/*AREAS DE LA GRILLA, RUTINAS*/
+.paso_I {
+  grid-area: pasoI;
+}
+
+.paso_II {
+  grid-area: pasoII;
+}
+
+.paso_III {
+  grid-area: pasoIII;
+}
+
+.paso_IV {
+  grid-area: pasoIV;
+}
+
+.paso_V {
+  grid-area: pasoV;
+  text-align: center;
+}
+
+/*keyframes*/
+.animacion {
+  color: #FACBEA;
+  animation-name: efecto_colorido;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-delay: 3s;
+}
+
+@keyframes efecto_colorido {
+  0% {
+    color: #FACBEA;
+    transform: scale(2, 2);
+  }
+  50% {
+    color: #D988B9;
+  }
+  100% {
+    color: #B0578D;
+  }
+}
+/*ESTILOS DEL FOOTER*/
+footer section form {
+  text-align: right;
+  color: greys;
+  margin: 5%;
+}
+footer p {
+  text-align: center;
+}
+
+/*REDES SOCIALES*/
+.icono-fb {
   width: 100%;
 }
-footer section section .redes {
+
+.icono-wp {
+  width: 100%;
+}
+
+.icono-mail {
+  width: 100%;
+}
+
+.redes {
   width: 20%;
   height: 100px;
   padding: 0;
@@ -111,18 +364,162 @@ footer section section .redes {
   align-items: space-evenly;
   justify-content: space-evenly;
 }
-footer section section .contacto {
+
+/*SUSCRIPCION*/
+.contacto {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-footer section form {
-  text-align: right;
-  color: greys;
-  margin: 5%;
+
+/*PANTALLA CELULAR*/
+@media (max-width: 576px) {
+  .titulo-principal {
+    color: #FACBEA;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+    font-size: 145%;
+    margin: auto;
+  }
+  .navbar img {
+    padding: 2%;
+  }
+  ul {
+    margin: 5px;
+  }
+  .grilla_pasos {
+    display: grid;
+    grid-template-areas: "paso1" "paso2" "paso3" "paso4" "img1" "paso5" "paso6" "paso7" "paso8" "paso9" "paso10";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+    background-color: #FACBEA;
+  }
+  .grilla-principal {
+    display: grid;
+    grid-template-areas: "video" "texto1" "foto2" "texto2" "foto1" "texto3";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+  }
+  .foto-funciones-piel {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+  .video-inicio {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .contacto {
+    display: grid;
+    grid-template-areas: "iconos" "suscripcion";
+    grid-template-rows: 150px;
+    grid-template-columns: 100%;
+  }
+  .redes {
+    width: 50%;
+    margin: auto;
+    padding: auto;
+  }
+  footer form {
+    text-align: center;
+    color: greys;
+    margin: 5%;
+  }
+  .foto-capas-piel {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 70%;
+    margin: 0 15%;
+  }
+  .video-dadatina {
+    margin: auto;
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  li {
+    padding: 2px;
+    margin: auto;
+  }
+  footer section form {
+    text-align: center;
+    color: greys;
+    margin: 5%;
+  }
+  .inicio_rutina {
+    display: grid;
+    grid-template-areas: "txt1" "fto1";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+  }
+  .grilla_5_pasos {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "pasoI" "pasoII" "pasoIII" "pasoIV" "pasoV" "pasoV";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    margin: auto;
+  }
 }
-footer p {
-  text-align: center;
+/*PANTALLA COMPUTADORA*/
+@media (min-width: 800px) {
+  .titulo-principal {
+    color: #FACBEA;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+    font-size: 200%;
+    margin: auto;
+  }
+  .grilla-principal {
+    display: grid;
+    grid-template-areas: "video texto1" "texto2 texto3" "foto1  foto2";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;
+  }
+}
+/*PANTALLA TABLET*/
+@media (max-width: 576px) {
+  .grilla_pasos {
+    display: grid;
+    grid-template-areas: "paso1" "paso2" "paso3" "paso4" "img1" "paso5" "paso6" "paso7" "paso8" "paso9" "paso10";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+  }
+  .paso_7 {
+    padding: 5%;
+    margin: 0;
+  }
+}
+/*FUENTE*/
+/*font-family: 'Buenard', serif;*/
+/*
+$rosa:#FACBEA;  
+$violeta:#B0578D; 
+$cremita:#FFE4D6;
+$rosa_fuerte:#D988B9;
+
+*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*LETRA DEL PROYECTO*/
+html {
+  font-size: 62.5%;
+}
+
+/*TIPO DE LETRA Y TAMAÑO*/
+body {
+  font-family: "Buenard", serif;
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=estilos.css.map */
