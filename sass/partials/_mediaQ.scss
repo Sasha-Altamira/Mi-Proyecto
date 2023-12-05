@@ -1,3 +1,91 @@
+/*PANTALLA COMPUTADORA*/
+
+@media (min-width: 1000px) {
+    .titulo-principal {
+        color: #FACBEA;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+        font-size: 200%;
+        margin: auto;
+    }
+
+    .grilla-principal {
+        display: grid;
+        grid-template-areas:
+            "video texto1"
+            "texto2 texto3"
+            "foto1  foto2";
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 50% 50%
+    }
+    
+    .row .img_1 {
+        width: 100%;
+    }
+
+}
+
+
+/*PANTALLA TABLET*/
+
+@media (max-width: 999px) {
+    .paso_7 {
+        padding: 5%;
+        margin: 0;
+    }
+
+    .paso_6 {
+        padding: 5%;
+        margin: 0;
+    }
+
+    .row .grilla_pasos {
+        display: grid;
+        grid-template-areas:
+            "paso1"
+            "paso2"
+            "paso3"
+            "paso4"
+            "img1"
+            "paso5"
+            "paso6"
+            "paso7"
+            "paso8"
+            "paso9"
+            "paso10";
+        grid-template-rows: 1fr;
+        grid-template-columns: 100%;
+
+    }
+
+    .row .img_1 {
+        width: 100%;
+    }
+
+    .inicio_rutina {
+        display: grid;
+        grid-template-areas:
+            "txt1"
+            "fto1";
+        grid-template-rows: 1fr;
+        grid-template-columns: 100%;
+    }
+    .grilla-principal {
+        display: grid;
+        grid-template-areas:
+            "video"
+            "texto1"
+            "foto2"
+            "texto2"
+            "foto1"
+            "texto3";
+        grid-template-rows: 1fr;
+        grid-template-columns: 100%;
+
+    }
+}
+
 /*PANTALLA CELULAR*/
 @media (max-width: 576px) {
     .titulo-principal {
@@ -15,24 +103,6 @@
 
     ul {
         margin: 5px;
-    }
-    .grilla_pasos {
-        display: grid;
-        grid-template-areas:
-            "paso1"
-            "paso2"
-            "paso3"
-            "paso4"
-            "img1"
-            "paso5"
-            "paso6"
-            "paso7"
-            "paso8"
-            "paso9"
-            "paso10";
-        grid-template-rows: 1fr;
-        grid-template-columns: 100%;        
-        background-color: #FACBEA;
     }
 
     .grilla-principal {
@@ -101,11 +171,12 @@
         width: 100%;
     }
 
-   
-    li{
+
+    li {
         padding: 2px;
         margin: auto;
     }
+
     footer {
         section {
             form {
@@ -115,64 +186,31 @@
             }
         }
     }
-    
-.inicio_rutina {
-    display: grid;
-    grid-template-areas:
-        "txt1"
-        "fto1";
-    grid-template-rows: 1fr;
-    grid-template-columns: 100%;
-}
-    
-.grilla_5_pasos {
-    width: 100%;
-    display: grid;
-    grid-template-areas:
-        "pasoI"   
-        "pasoII"
-        "pasoIII" 
-        "pasoIV"
-        "pasoV"   
-        "pasoV";
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr;
-    margin: auto;
-}
 
-    
-}
-
-
-/*PANTALLA COMPUTADORA*/
-
-@media (min-width: 800px) {
-    .titulo-principal {
-        color: #FACBEA;
-        text-align: center;
-        text-decoration: none;
-        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
-        font-size: 200%;
-        margin: auto;
-    }
-
-    .grilla-principal {
+    .inicio_rutina {
         display: grid;
         grid-template-areas:
-            "video texto1"
-            "texto2 texto3"
-            "foto1  foto2";
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 50% 50%
+            "txt1"
+            "fto1";
+        grid-template-rows: 1fr;
+        grid-template-columns: 100%;
     }
 
-}
+    .grilla_5_pasos {
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "pasoI"
+            "pasoII"
+            "pasoIII"
+            "pasoIV"
+            "pasoV"
+            "pasoV";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+    }
 
-
-/*PANTALLA TABLET*/
-
-@media (max-width: 576px) {
-    .grilla_pasos {
+    .row .grilla_pasos {
         display: grid;
         grid-template-areas:
             "paso1"
@@ -188,11 +226,15 @@
             "paso10";
         grid-template-rows: 1fr;
         grid-template-columns: 100%;
-
+        background-color: #FACBEA;
     }
 
-    .paso_7 {
+    .paso_6 {
         padding: 5%;
         margin: 0;
+    }
+    
+    .row .img_1 {
+        width: 100%;
     }
 }
