@@ -8,7 +8,7 @@ header {
         text-decoration: none;
     
     }
-    
+        
 }
 
 /*MENU DE NAVEGACION*/
@@ -17,8 +17,7 @@ header {
 }
 
 .bg-body-tertiary {
-    opacity: none;
-    --bs-bg-opacity: none;
+   --bs-bg-opacity: none;
 }
 
 .navbar {
@@ -38,6 +37,10 @@ button {
     .navbar-toggler {
         border: none;
     }
+}
+
+.row {
+        --bs-gutter-x: 0rem;
 }
 
 /*TITULO DE LA WEB*/

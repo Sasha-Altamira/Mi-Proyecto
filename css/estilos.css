@@ -17,7 +17,6 @@ header a {
 }
 
 .bg-body-tertiary {
-  opacity: none;
   --bs-bg-opacity: none;
 }
 
@@ -36,6 +35,10 @@ header a {
 
 button .navbar-toggler {
   border: none;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
 }
 
 /*TITULO DE LA WEB*/
