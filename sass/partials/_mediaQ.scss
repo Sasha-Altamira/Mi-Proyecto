@@ -1,13 +1,13 @@
 /*PANTALLA COMPUTADORA*/
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
     .titulo-principal {
         color: #FACBEA;
         text-align: center;
         text-decoration: none;
         text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
         font-size: 200%;
-        margin: auto;
+        margin: 2px;
     }
 
     .grilla-principal {
@@ -23,13 +23,20 @@
     .row .img_1 {
         width: 100%;
     }
-
 }
 
 
 /*PANTALLA TABLET*/
 
-@media (max-width: 999px) {
+@media (max-width: 1099px) {
+    .titulo-principal {
+        color: #FACBEA;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+        font-size: 145%;
+        margin: 2px;
+    }    
     .paso_7 {
         padding: 5%;
         margin: 0;
@@ -71,15 +78,16 @@
         grid-template-rows: 1fr;
         grid-template-columns: 100%;
     }
+
     .grilla-principal {
         display: grid;
         grid-template-areas:
             "video"
             "texto1"
-            "foto2"
             "texto2"
-            "foto1"
-            "texto3";
+            "foto2"
+            "texto3"
+            "foto1";
         grid-template-rows: 1fr;
         grid-template-columns: 100%;
 
@@ -94,7 +102,7 @@
         text-decoration: none;
         text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
         font-size: 145%;
-        margin: auto;
+        margin: 2px;
     }
 
     .navbar img {
@@ -110,10 +118,10 @@
         grid-template-areas:
             "video"
             "texto1"
-            "foto2"
             "texto2"
-            "foto1"
-            "texto3";
+            "foto2"
+            "texto3"
+            "foto1";
         grid-template-rows: 1fr;
         grid-template-columns: 100%;
 
@@ -122,7 +130,6 @@
     .foto-funciones-piel {
         height: 100%;
         width: 100%;
-        margin: auto;
     }
 
     .video-inicio {
@@ -237,4 +244,6 @@
     .row .img_1 {
         width: 100%;
     }
+
+    
 }
