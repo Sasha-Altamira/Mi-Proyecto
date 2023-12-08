@@ -1,72 +1,59 @@
 /*CUERPO DEL INDEX*/
 main {
     ul {
-       li{
-        padding: 3%;
-       }
-
-    }
-    div{
-        text-align: center;
-        div{
-            img{
-                width: 100%;
-            }
-        }
-    }
-
-    p {
-        text-align: center;
-        width: 100%;
-        padding: 30px;
-        font-size: 20px;
-    }
-
-    .grilla_pasos {
-        display: grid;
-        grid-template-areas:
-            "paso1 paso2 paso3"
-            "paso4 img1  paso5"
-            "paso6 paso6 paso7"
-            "paso8 paso9 paso10";
-        grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: center;
-        background-color: #FACBEA;
-    
-        div {
-            width: 100%;
-            height: 100%;
-
-            h3 {
-                margin: 5%;
-            }
-
-            p {
-                padding: 0;
-            }
-
+        li {
+            padding: 3%;
         }
 
-        p {
-            display: flex;
-            padding: 5px;
-            font-size: 20px;
-            justify-content: center;
-            width: 100%;
-            font-weight: 500;
-        }
     }
 
 }
 
+.grilla_pasos {
+    display: grid;
+    grid-template-areas:
+        "paso1 paso2 paso3"
+        "paso4 img1  paso5"
+        "paso6 paso6 paso7"
+        "paso8 paso9 paso10";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    background-color: #FACBEA;
+
+    div {
+        width: 100%;
+        height: 100%;
+
+        h3 {
+            margin: 5%;
+        }
+
+        p {
+            padding: 0;
+        }
+
+    }
+
+    p {
+        display: flex;
+        padding: 5px;
+        font-size: 20px;
+        justify-content: center;
+        width: 100%;
+        font-weight: 500;
+    }
+}
+
+
+
 h4 {
     text-align: center;
-color: #B0578D;
-font-size: 2rem;
-font-weight: 900;
-text-decoration: underline;
-margin: 2%;
+    color: #B0578D;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: underline;
+    margin: 2%;
 }
 
 h3 {
@@ -266,6 +253,7 @@ p {
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(500px);
     margin: auto;
+    padding: 2%;
 }
 
 /*AREAS DE LA GRILLA, RUTINAS*/
@@ -275,6 +263,7 @@ p {
 
 .paso_II {
     grid-area: pasoII;
+    width: 90%;
 }
 
 .paso_III {
@@ -283,12 +272,14 @@ p {
 
 .paso_IV {
     grid-area: pasoIV;
+    width: 92%;
 }
 
 .paso_V {
     grid-area: pasoV;
     text-align: center;
 }
+
 /*keyframes*/
 .animacion {
     color: #FACBEA;
@@ -298,16 +289,18 @@ p {
     animation-delay: 3s;
 }
 
-@keyframes efecto_colorido{
-    0%{
+@keyframes efecto_colorido {
+    0% {
         color: #FACBEA;
-        transform: scale(2,2);
+        transform: scale(2, 2);
     }
-    50%{
-        color:#D988B9;
-        
+
+    50% {
+        color: #D988B9;
+
     }
-    100%{
+
+    100% {
         color: #B0578D;
     }
 }

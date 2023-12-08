@@ -56,19 +56,8 @@ button .navbar-toggler {
 main ul li {
   padding: 3%;
 }
-main div {
-  text-align: center;
-}
-main div div img {
-  width: 100%;
-}
-main p {
-  text-align: center;
-  width: 100%;
-  padding: 30px;
-  font-size: 20px;
-}
-main .grilla_pasos {
+
+.grilla_pasos {
   display: grid;
   grid-template-areas: "paso1 paso2 paso3" "paso4 img1  paso5" "paso6 paso6 paso7" "paso8 paso9 paso10";
   grid-template-rows: auto;
@@ -76,17 +65,17 @@ main .grilla_pasos {
   justify-content: center;
   background-color: #FACBEA;
 }
-main .grilla_pasos div {
+.grilla_pasos div {
   width: 100%;
   height: 100%;
 }
-main .grilla_pasos div h3 {
+.grilla_pasos div h3 {
   margin: 5%;
 }
-main .grilla_pasos div p {
+.grilla_pasos div p {
   padding: 0;
 }
-main .grilla_pasos p {
+.grilla_pasos p {
   display: flex;
   padding: 5px;
   font-size: 20px;
@@ -126,11 +115,6 @@ p {
 }
 
 /*ESTILOS DEL INDEX*/
-.video-inicio {
-  grid-area: video;
-  padding: 0 0 2% 3%;
-}
-
 .banner-inicio {
   width: 100%;
   background-position: center;
@@ -181,9 +165,15 @@ p {
   grid-area: texto1;
 }
 
-/*DADATINA*/
+/*DADATINA TIPOS DE PIEL*/
 .influencer {
-  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/*DADATINA INDEX*/
+.video_inicio {
+  grid-area: video;
 }
 
 /*ESTILOS DE LA PAGINA TIPOS DE PIEL*/
@@ -280,6 +270,7 @@ p {
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(500px);
   margin: auto;
+  padding: 2%;
 }
 
 /*AREAS DE LA GRILLA, RUTINAS*/
@@ -289,6 +280,7 @@ p {
 
 .paso_II {
   grid-area: pasoII;
+  width: 90%;
 }
 
 .paso_III {
@@ -297,6 +289,7 @@ p {
 
 .paso_IV {
   grid-area: pasoIV;
+  width: 92%;
 }
 
 .paso_V {
@@ -379,11 +372,22 @@ footer p {
   .grilla-principal {
     display: grid;
     grid-template-areas: "video texto1" "texto2 texto3" "foto1  foto2";
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 50% 50%;
   }
   .row .img_1 {
     width: 100%;
+  }
+  .sonrisa {
+    grid-area: fto1;
+    width: 100%;
+    padding: 5% 2%;
+  }
+  div {
+    text-align: center;
+  }
+  div div img {
+    width: 60%;
   }
 }
 /*PANTALLA TABLET*/
@@ -425,12 +429,29 @@ footer p {
     grid-template-rows: 1fr;
     grid-template-columns: 100%;
   }
-  .mujer_mascarilla {
-    width: auto;
+  .sonrisa {
+    grid-area: fto1;
+    width: 100%;
+    padding: 3%;
   }
+  .mujer_mascarilla {
+    width: 50%;
+  }
+  .parrafo_texto5 {
+    padding: 0 18%;
+  }
+  .foto-funciones-piel {
+    padding: 2%;
+  }
+  .foto-capas-piel {
+    padding: 2%;
+  }
+  h3 {
+    padding-top: 3%;
+  }
+  /*PANTALLA CELULAR*/
 }
-/*PANTALLA CELULAR*/
-@media (max-width: 576px) {
+@media (max-width: 1099px) and (max-width: 576px) {
   .titulo-principal {
     color: #FACBEA;
     text-align: center;
@@ -520,6 +541,9 @@ footer p {
   }
   .row .img_1 {
     width: 100%;
+  }
+  .mujer_mascarilla {
+    width: 65%;
   }
 }
 /*FUENTE*/
