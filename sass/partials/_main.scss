@@ -18,7 +18,7 @@ main {
     p {
         text-align: center;
         width: 100%;
-        padding: 50px;
+        padding: 30px;
         font-size: 20px;
     }
 
@@ -92,14 +92,6 @@ p {
 
 /*ESTILOS DEL INDEX*/
 
-.video-inicio {
-    grid-area: video;
-    width: 100%;
-    justify-content: center;
-    padding: 40px;
-    height: 100%;
-}
-
 .banner-inicio {
     width: 100%;
     background-position: center;
@@ -153,12 +145,18 @@ p {
     grid-area: texto1;
 }
 
-/*DADATINA*/
+/*DADATINA TIPOS DE PIEL*/
 
 .influencer {
-    font-size: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
+/*DADATINA INDEX*/
+
+.video_inicio {
+    grid-area: video;
+}
 
 /*ESTILOS DE LA PAGINA TIPOS DE PIEL*/
 

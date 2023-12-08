@@ -16,14 +16,21 @@
             "video texto1"
             "texto2 texto3"
             "foto1  foto2";
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 50% 50%
+        grid-template-rows: 1fr;
+        grid-template-columns: 50% 50%;
     }
     
     .row .img_1 {
         width: 100%;
     }
+
 }
+
+
+
+
+
+
 
 
 /*PANTALLA TABLET*/
@@ -90,9 +97,20 @@
             "foto1";
         grid-template-rows: 1fr;
         grid-template-columns: 100%;
-
+    }
+    
+    .mujer_mascarilla{
+        width: auto;
     }
 }
+
+
+
+
+
+
+
+
 
 /*PANTALLA CELULAR*/
 @media (max-width: 576px) {
@@ -130,13 +148,6 @@
     .foto-funciones-piel {
         height: 100%;
         width: 100%;
-    }
-
-    .video-inicio {
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-
     }
 
     .contacto {
@@ -216,6 +227,7 @@
         grid-template-columns: 100%;
         grid-template-rows: 1fr;
     }
+
 
     .row .grilla_pasos {
         display: grid;
